@@ -4,7 +4,6 @@ import env from "@/app/env";
 import {Avatars,Client, Databases, Storage, Users} from "node-appwrite"
 
 
-const sdk = require('node-appwrite');
 
 let client = new Client();
 
