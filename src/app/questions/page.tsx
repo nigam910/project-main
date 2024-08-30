@@ -18,7 +18,6 @@ const Page = async ({
 
     const queries = [
         Query.orderDesc("$createdAt"),
-        Query.offset((+searchParams.page - 1) * 25),
         Query.limit(25),
     ];
 
@@ -82,7 +81,9 @@ const Page = async ({
             </div>
             <div className="mb-4 max-w-3xl space-y-6">
                 {questions.documents.map(ques => (
+                    <div>
                     <QuestionCard key={ques.$id} ques={ques} />
+                    </div>
                 ))}
             </div>
             <Pagination total={questions.total} limit={25} />
