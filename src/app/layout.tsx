@@ -4,8 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 import { cn } from "@/lib/utils";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+
 
 export const metadata: Metadata = {
   title: "ReviewSync Forum",
@@ -20,8 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={cn(inter.className, "")}>
-        <Header />
-        <Navbar/>
+
         
         {children}</body>
     </html>
